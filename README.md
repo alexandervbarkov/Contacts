@@ -1,8 +1,7 @@
 # Contacts
-## Description
 Demo app which provides backend services to manage contacts.
 
-# Technologies
+## Technologies
 1. Spring Boot Web
 1. Spring Data
 1. MongoDb
@@ -12,7 +11,7 @@ Demo app which provides backend services to manage contacts.
 1. Swagger
 
 ## Build
-./gradlew build bootjar
+./gradlew build
 
 ## Run
 docker-compose up

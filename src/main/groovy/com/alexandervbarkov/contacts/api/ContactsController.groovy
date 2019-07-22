@@ -20,6 +20,7 @@ class ContactsController {
         dao.findAll()
     }
 
+    //TODO: find out why swagger shows additional parameters. Because of Groovy?
     @PostMapping("/contacts")
     def contacts(@RequestBody Contact contact) {
         dao.save(contact)
