@@ -1,10 +1,9 @@
 package com.alexandervbarkov.contacts.model
 
-import org.springframework.data.annotation.Id
+import groovy.transform.EqualsAndHashCode
 
+@EqualsAndHashCode
 class Contact {
-    @Id
-    String id
     String firstName
     String lastName
     String phoneNumber

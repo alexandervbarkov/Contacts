@@ -14,8 +14,10 @@ class SwaggerConfig {
     @Bean
     Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .ignoredParameterTypes(MetaClass)
+                .useDefaultResponseMessages(false)
                 .select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.alexandervbarkov"))
                 .paths(PathSelectors.any())
                 .build()
     }
